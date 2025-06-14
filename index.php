@@ -1,12 +1,13 @@
 <?php
 
- $cabecalho_title = "Mirror Fashion | Home";
+$cabecalho_title = "Mirror Fashion | Home";
 $clear_css = '<link rel="stylesheet" href="./css/clear.css">';
 $cabecalho_css = '<link rel="stylesheet" href="./css/cabecalho.css">';
 $rodape_css = '<link rel="stylesheet" href="./css/rodape.css">';
 $index_css = '<link rel="stylesheet" href="./css/estilo.css">';
-include("./php/head.php");
-include("./php/cabecalho.php") ?>
+include("./components/head.php");
+include("./components/cabecalho.php");
+?>
 
 <!--Barra de Busca-->
 <div class="centro destaque">
@@ -41,7 +42,7 @@ include("./php/cabecalho.php") ?>
     </section>
     <section class="banner">
         <figure>
-            <img class="banner-destaque" src="mirrorfashion/img/destaque-home.png" alt="Promoção: Big City Night">
+            <img class="banner-destaque" src="img/destaque-home.png" alt="Promoção: Big City Night">
         </figure>
         <a href="" class="pause"></a>
     </section>
@@ -53,20 +54,19 @@ include("./php/cabecalho.php") ?>
             <?php
             $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
             $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data LIMIT 0, 12");
-            
+
             while ($produto = mysqli_fetch_array($dados)):
             ?>
 
-<li>
-    <a href="produto.php?id=<?= $produto['id']?>">
-        <figure>
-            <img src="mirrorfashion/img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<? $produto['nome'] ?>">
-            <figcaption><?= $produto['nome']?> por <?= $produto['preco']?></figcaption>
-        </figure>
-    </a>
-</li>
-<?php endwhile; ?>
-            
+                <li> <a href="produto.php?id=<?= $produto['id'] ?>">
+                        <figure>
+                            <img src="img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<? $produto['nome'] ?>">
+                            <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
+                        </figure>
+                    </a>
+                </li>
+            <?php endwhile; ?>
+
         </ol>
         <button type="button">Mostrar mais</button>
     </section>
@@ -74,22 +74,22 @@ include("./php/cabecalho.php") ?>
         <h2>Mais Vendidos</h2>
         <ol>
             <!--Está mostrando os produtos do menor pro maior-->
-        <?php
+            <?php
             $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
             $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 12 ");
-            
-            
+
+
             while ($produto = mysqli_fetch_array($dados)):
             ?>
-            <li>
-                <a href="produto.php?id=<?= $produto['id']?>">
-                    <figure>
-                        <img src="mirrorfashion/img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<? $produto['nome'] ?>">
-                        <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
-                    </figure>
-                </a>
-            </li>
-                <?php endwhile; ?>
+                <li>
+                    <a href="produto.php?id=<?= $produto['id'] ?>">
+                        <figure>
+                            <img src="mirrorfashion/img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<? $produto['nome'] ?>">
+                            <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
+                        </figure>
+                    </a>
+                </li>
+            <?php endwhile; ?>
         </ol>
         <button type="button">Mostrar mais</button>
     </section>

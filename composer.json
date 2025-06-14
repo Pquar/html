@@ -1,5 +1,5 @@
 {
-  "name": "my-php-project",
+  "name": "my-vendor/my-php-project",
   "description": "A PHP project with MySQL database",
   "type": "project",
   "require": {
