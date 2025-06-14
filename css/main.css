@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+}
+
+body{
+    color: #333333;
+    font-family: "Lucida Grande", sans-serif;
+}
+
+h1{
+    background-image: url(../mirrorfashion/img/sobre-background.jpg);
+    padding: 10px;
+    font-weight: bold;
+}
+
+h2{
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;
+}
+
+p{
+    padding: 0 45px;
+    text-indent: 15px;
+}
+
+figure{
+    background-color: #F2EDED;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+.imgcentro{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+figcaption{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.ocentru{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.rodape{
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+.rodapeimg{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+.imgfamilia{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+h1+p{
+    text-indent: 40px;
+    /*não está funcionando*/
+}
+
+p::first-line{
+    font-variant: small-caps;
+}
+
+:not(p) + p::first-line{
+    font-variant: small-caps;
+    /*não está funcionando*/
+}
+
+.video, .mapa{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

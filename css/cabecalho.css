@@ -1,0 +1,47 @@
+header{
+    position: relative;
+}
+
+.centro{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.sacola{
+    background-image: url(../mirrorfashion/img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu ul{
+    font-size: 15px;
+    display: block;
+}
+
+.menu a{
+    color: #003366;
+}
+
+.menu ul li{
+    display: inline;
+    margin-left: 20px;
+}

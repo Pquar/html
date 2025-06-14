@@ -1,0 +1,15 @@
+body{
+    padding-top: 55px;
+}
+
+.form-control:invalid{
+    border: 1px solid #cc0000;
+}
+
+.btn{
+    margin-top: 20px;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #cc0000;
+    border-color: darkred;
+}

@@ -1,0 +1,41 @@
+/*Rodapé*/
+
+footer{
+    background-image: url(../mirrorfashion/img/fundo-rodape.png);
+    padding: 20px 0;
+    clear: both;
+}
+
+footer .centro{
+    position: relative;
+}
+
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social a{
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"]{
+    background-image: url(../mirrorfashion/img/facebook.png);
+}
+
+.social a[href*="twitter.com"]{
+    background-image: url(../mirrorfashion/img/twitter.png);
+}
+
+.social a[href*="Plus.google.com"]{
+    background-image: url(../mirrorfashion/img/googleplus.png);
+}
+
+.social li{
+    float: left;
+    margin-left: 25px;
+}
