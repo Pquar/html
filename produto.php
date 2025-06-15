@@ -16,7 +16,7 @@ include("./php/cabecalho.php") ?>
 <div class="centro produto-back">
     <div class="produto">
         <h1><?= $produto['nome'] ?></h1>
-            <p>por apenas <?= $produto['preco'] ?></p>
+        <p>por apenas <?= $produto['preco'] ?></p>
 
         <form action="checkout.php" method="post">
             <fieldset class="cores">
@@ -42,7 +42,7 @@ include("./php/cabecalho.php") ?>
                 <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
                 <output for="tamanho" name="valortamanho" class="tamanho">42</output>
             </fieldset>
-                <button class="comprar">Comprar</button>
+            <button class="comprar">Comprar</button>
             <a href="index.php">
                 <button type="button" class="cancelar">Cancelar</button>
             </a>
