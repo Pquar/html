@@ -1,4 +1,4 @@
-# Mirror Fashion - Devcontainer Setup
+<!-- # Mirror Fashion - Devcontainer Setup
 
 Este projeto está configurado para funcionar com VS Code Dev Containers, proporcionando um ambiente de desenvolvimento consistente e isolado.
 
@@ -89,4 +89,4 @@ Após iniciar o devcontainer:
 1. Abra http://localhost:8080 no seu navegador
 2. Todos os arquivos PHP serão executados automaticamente
 3. Qualquer alteração nos arquivos será refletida imediatamente
-4. Use o MySQL Workbench ou phpMyAdmin para gerenciar o banco de dados
+4. Use o MySQL Workbench ou phpMyAdmin para gerenciar o banco de dados -->
